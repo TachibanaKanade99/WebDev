@@ -1,0 +1,30 @@
+body {
+    /*background: #ffffff;*/
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+}
+
+/* Navbar background color */
+.navbar-custom {
+    background-color: #1A7B7E;
+}
+
+/* Navbar text color */
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+    color: #ffffff;
+}
+
+/* Navbar link color */
+.navbar-custom .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url("../img/BKU.jpg");
+    background-size: 1500px;
+}
