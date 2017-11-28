@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html="vi">
+<head>
+    <!-- Vietnamese -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Guillotine for image cropping -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 9]>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'></script>
+    <![endif]-->
+    <link rel="stylesheet" href="lib/guillotine/jquery.guillotine.css" />
+    <script src="lib/guillotine/jquery.guillotine.min.js"></script>
+    <!-- Image Crop -->
+    <script src="cropImage.js"></script>
+    <!-- Custom style -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Title -->
+    <title>Image Cropping</title>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Image Cropping Demo</h1>
+
+        <div class="frame">
+            <img id="mypic" src="img/itmo.png" />
+        </div>
+
+        <div id="controls">
+            <button id="rorate_left" type="button"> &lt; </button>
+            <button id="zoom_out" type="button"> - </button>
+            <button id="fit" type="button"> [ ] </button>
+            <button id="zoom_in" type="button"> + </button>
+            <button id="rotate_right" type="button"> &gt; </button>
+        </div>
+
+        <ul id='data'>
+            <div class='column'>
+                <li>x: <span id='x'></span></li>
+                <li>y: <span id='y'></span></li>
+            </div>
+            <div class='column'>
+                <li>width:  <span id='w'></span></li>
+                <li>height: <span id='h'></span></li>
+            </div>
+            <div class='column'>
+                <li>scale: <span id='scale'></span></li>
+                <li>angle: <span id='angle'></span></li>
+            </div>
+        </ul>
+    </div>
+
+    <input type="button" id="subbtn" type="submit" value="Submit"/>
+    <div id="btnfeedback"></div>
+</body>
+</html>
